@@ -15,7 +15,6 @@
                 <img src="https://image.tmdb.org/t/p/w500{{ movie['poster_path'] }}" class="img-fluid rounded" alt="{{ movie['title'] }}">
             </div>
             <div class="col-md-8">
-                <a href="/" class="btn btn-secondary mt-3">Search Again</a>
                 <h1 class="display-4">{{ movie['title'] }}</h1>
                 <p class="lead">{{ movie['overview'] }}</p>
                 <p><strong>Release Date:</strong> {{ movie['release_date'] }}</p>
@@ -33,6 +32,9 @@
                         </div>
                     {% endfor %}
                 </div>
+                <center>
+                    <a href="/" class="btn btn-secondary mt-3">Search Again</a>
+                </center>
             </div>
         </div>
     </div>
